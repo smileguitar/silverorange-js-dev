@@ -1,5 +1,5 @@
 import './App.css';
-import ReposView from 'views/ReposView';
+import ReposView from 'components/ReposView';
 
 export function App() {
   return (

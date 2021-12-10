@@ -31,8 +31,8 @@ export default function useRepos({ languageFilter }: UseReposType) {
   const fetchData = async () => {
     try {
       const returnData = await fetch(`${SERVER_ENDPOINT}/repos`);
-      const reposData = await returnData.json();
       if (returnData.status === 200) {
+        const reposData = await returnData.json();
         const orderedData = reposData.sort((a: Repo, b: Repo) => {
           if (dayjs(a.created_at).isSame(b.created_at)) {
             return 0;
