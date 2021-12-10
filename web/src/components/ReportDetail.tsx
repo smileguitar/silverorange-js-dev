@@ -16,7 +16,6 @@ export default function ReportDetail({ repo, onGoBack }: ReportDetailType) {
   const { readme, isFetching: isFetchingReadme } = useReadme({
     fullname: repo.full_name,
   });
-  console.log(readme);
 
   return (
     <div className="commit_container">

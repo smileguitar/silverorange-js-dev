@@ -58,7 +58,7 @@ export default function RepoList({
           <div
             onClick={() => onSelectedRepoChange(repo)}
             className="repo_card"
-            key={repo.id}
+            key={`${repo.id}-${repo.name}`}
           >
             <p>Name: {repo.name}</p>
             <p>Description: {repo.description}</p>
