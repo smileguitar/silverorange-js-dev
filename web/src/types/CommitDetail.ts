@@ -1,4 +1,4 @@
-import { Commit } from "./Commit";
+import { Commit } from './Commit';
 
 export interface CommitDetail {
   sha: string;
