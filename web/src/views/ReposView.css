@@ -1,6 +1,7 @@
 .container {
   max-width: 50rem;
   margin: auto;
+  padding-top: 2rem;
 }
 
 .repo_card {
@@ -14,4 +15,15 @@
 
 .error_msg {
   color: red;
+}
+
+.btn {
+  padding: .4rem .6rem;
+}
+
+.language_filter_container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
 }
