@@ -13,7 +13,7 @@ repos.get('/', async (_: Request, res: Response) => {
     );
     const filteredData = returnData.data.filter((item) => !item.fork);
     res.status(200);
-    res.json({ status: 200, data: filteredData });
+    res.json(filteredData);
   } catch (e) {
     res.status(400);
     res.json({ status: 400, message: 'Failed to fetch data.' });
